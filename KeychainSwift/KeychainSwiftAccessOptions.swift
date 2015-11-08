@@ -61,7 +61,7 @@ public enum KeychainSwiftAccessOptions {
   This is recommended for items that only need to be accessible while the application is in the foreground. Items with this attribute never migrate to a new device. After a backup is restored to a new device, these items are missing. No items can be stored in this class on devices without a passcode. Disabling the device passcode causes all items in this class to be deleted.
   
   */
-  case AccessibleWhenPasscodeSetThisDeviceOnly
+//  case AccessibleWhenPasscodeSetThisDeviceOnly
   
   /**
   
@@ -93,8 +93,8 @@ public enum KeychainSwiftAccessOptions {
     case .AccessibleAlways:
       return toString(kSecAttrAccessibleAlways)
       
-    case .AccessibleWhenPasscodeSetThisDeviceOnly:
-      return toString(kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly)
+//    case .AccessibleWhenPasscodeSetThisDeviceOnly:
+//      return toString(kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly)
       
     case .AccessibleAlwaysThisDeviceOnly:
       return toString(kSecAttrAccessibleAlwaysThisDeviceOnly)
